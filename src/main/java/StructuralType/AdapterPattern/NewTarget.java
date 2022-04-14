@@ -1,6 +1,6 @@
 package StructuralType.AdapterPattern;
 
-public interface NewDataTarget {
+public interface NewTarget {
     public void loveRedHat();
     public void sleep();
 }

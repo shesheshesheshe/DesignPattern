@@ -1,6 +1,6 @@
 package StructuralType.AdapterPattern;
 
-public class ConcreteOldDataAdaptee implements OldDataAdaptee{
+public class ConcreteOldAdaptee implements OldAdaptee {
 
     @Override
     public void killRedHat()

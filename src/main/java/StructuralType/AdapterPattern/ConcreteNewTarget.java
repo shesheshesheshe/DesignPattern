@@ -1,6 +1,6 @@
 package StructuralType.AdapterPattern;
 
-public class ConcreteNewDataTarget implements NewDataTarget{
+public class ConcreteNewTarget implements NewTarget {
         @Override
         public void loveRedHat()
         {

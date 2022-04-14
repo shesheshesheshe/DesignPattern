@@ -1,6 +1,6 @@
 package StructuralType.AdapterPattern;
 
-public interface OldDataAdaptee {
+public interface OldAdaptee {
     public void killRedHat();
     public void sleep();
 }

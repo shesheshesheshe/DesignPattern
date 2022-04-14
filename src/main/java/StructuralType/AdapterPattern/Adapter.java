@@ -1,14 +1,14 @@
 package StructuralType.AdapterPattern;
 
-public class DataAdapter implements NewDataTarget {
+public class Adapter implements NewTarget {
 
-        private OldDataAdaptee mOldData;
+        private OldAdaptee mOldData;
 
         // 需要取得被轉換者的物件參考
         // 範例是利用建構者取得
-        public DataAdapter(OldDataAdaptee oldDataAdaptee)
+        public Adapter(OldAdaptee oldAdaptee)
         {
-            mOldData = oldDataAdaptee;
+            mOldData = oldAdaptee;
         }
 
         // 實作介面的方法，並把方法都導向

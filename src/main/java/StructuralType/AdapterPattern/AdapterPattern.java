@@ -3,10 +3,10 @@ package StructuralType.AdapterPattern;
 public class AdapterPattern {
 
     public static void main(String[] args) {
-        NewDataTarget grandma = new ConcreteNewDataTarget();
+        NewTarget grandma = new ConcreteNewTarget();
 
-        OldDataAdaptee wolf = new ConcreteOldDataAdaptee();
-        NewDataTarget wolfAdapter = new DataAdapter(wolf);
+        OldAdaptee wolf = new ConcreteOldAdaptee();
+        NewTarget wolfAdapter = new Adapter(wolf);
 
         GrandmaHome grandmaHome = new GrandmaHome();
         grandmaHome.greeting(grandma);
@@ -15,7 +15,7 @@ public class AdapterPattern {
 }
 
 class GrandmaHome {
-    void greeting(NewDataTarget grandma){
+    void greeting(NewTarget grandma){
         System.out.println("Red Hat is in her grandma's home.");
         grandma.sleep();
         System.out.println("Her grandma is lying on the bed and says......");
